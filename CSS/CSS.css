@@ -1,0 +1,19 @@
+body{
+	font-family: 'Indie Flower', cursive;
+	background-color: #F0E68C;
+}
+h1{
+	position: absolute;
+	top: 18%;
+	left: 36%;
+	color: tomato;
+}
+form{
+	position: absolute;
+	left: 36%;
+	top: 35%;
+}
+.button{
+	font-size: 15px;
+	margin:18px;
+}

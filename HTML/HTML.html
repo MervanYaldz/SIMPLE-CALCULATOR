@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+body{
+	font-family: 'Indie Flower', cursive;
+	background-color: #F0E68C;
+}
+h1{
+	position: absolute;
+	top: 18%;
+	left: 36%;
+	color: tomato;
+}
+form{
+	position: absolute;
+	left: 36%;
+	top: 35%;
+}
+.button{
+	font-size: 15px;
+	margin:18px;
+}
+
+
+	</style>
+</head>
+<body>
+	<h1>SİMPLE CALCULATOR</h1>
+	<form name="FORM1">
+	NUMBER1:<input type="text" name="number1"><br><br>
+	NUMBER2:<input type="text" name="number2"><br><br>
+	RESULT:<input type="text"  name="result"><br><br>
+	<div class="button">
+<input type="button"  value="+" onclick="topla()" >
+<input type="button"  value="-" onclick="cıkar()" >
+<input type="button"  value="*" onclick="carp()" >
+<input type="button"  value="/"  onclick="bol()">
+</div>
+
+
+</form>
+	<script type="text/javascript">
+		
+function topla(){
+	a=parseInt(document.FORM1.number1.value);
+	b=parseInt(document.FORM1.number2.value);
+	c=a+b;
+	document.FORM1.result=c;
+}
+function cıkar(){
+	a=parseInt(document.FORM1.number1.value);
+	b=parseInt(document.FORM1.number2.value);
+	c=a-b;
+	document.FORM1.result=c;
+}
+function carp(){
+	a=parseInt(document.FORM1.number1.value);
+	b=parseInt(document.FORM1.number2.value);
+	c=a*b;
+	document.FORM1.result=c;
+}
+function bol(){
+	a=parseInt(document.FORM1.number1.value);
+	b=parseInt(document.FORM1.number2.value);
+	c=a/b;
+	document.FORM1.result=c;
+}
+
+
+	</script>
+</body>
+</html>
